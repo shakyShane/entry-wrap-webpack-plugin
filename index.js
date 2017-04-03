@@ -1,5 +1,11 @@
-var ConcatSource = require("webpack/lib/ConcatSource");
 var ModuleFilenameHelpers = require("webpack/lib/ModuleFilenameHelpers");
+var ConcatSource;
+
+try {
+  ConcatSource = require('webpack/lib/ConcatSource');       // webpack 1.x
+} catch (e) {
+  ConcatSource = require('webpack-sources').ConcatSource;   // webpack 2.x
+}
 
 function EntryWrap(before, after, options) {
     this.options = options || {};
