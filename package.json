@@ -1,6 +1,6 @@
 {
   "name": "entry-wrap-webpack-plugin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Wrap entry points with any code",
   "main": "index.js",
   "keywords": [
