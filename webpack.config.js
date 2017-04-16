@@ -11,6 +11,8 @@ module.exports = {
     jquery: 'jQuery'
   },
   plugins: [
-    new EntryWrap('require(["jquery"], function (jQuery) {', '})')
+    new EntryWrap('require(["jquery"], function (jQuery) {', '})', {
+      test: /\.js$/,
+    })
   ]
 };
