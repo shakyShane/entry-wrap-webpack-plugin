@@ -1,6 +1,6 @@
 {
   "name": "entry-wrap-webpack-plugin",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Wrap entry points with any code",
   "main": "index.js",
   "keywords": [
@@ -18,6 +18,12 @@
   "author": "Shane Osbourne",
   "license": "MIT",
   "devDependencies": {
-    "webpack": "1.12.14"
+    "webpack": "^2.4.1"
+  },
+  "dependencies": {
+    "webpack-sources": "^0.2.3"
+  },
+  "engines": {
+    "node": ">=4.3.0 <5.0.0 || >=5.10"
   }
 }
